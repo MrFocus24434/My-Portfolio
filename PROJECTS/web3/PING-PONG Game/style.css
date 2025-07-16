@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(images/game2.avif); /* Green background */
+}
+
+.game-area {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  background-image: url(images/game6.avif); /* White game area background */
+}
+
+.paddle {
+  position: absolute;
+  width: 20px;
+  height: 100px;
+}
+
+#player {
+  left: 10px;
+  background-color: #2196F3; /* Blue player paddle */
+}
+
+#computer {
+  right: 10px;
+  background-color: #FF9800; /* Orange computer paddle */
+}
+
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FF5722; /* Red ball */
+  border-radius: 50%;
+  animation: moveBall 1s linear infinite;
+}
+
+@keyframes moveBall {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.restart-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  margin-top: 350px;
+  margin-right: 170px;
+  background-color: #f44336; /* Red restart button */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Add separate styles for each ball */
+#ball1 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FF5722; /* Red ball */
+  border-radius: 50%;
+}
+
+#ball2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FF5722; /* Red ball */
+  border-radius: 50%;
+}
+
+.scoreboard {
+  margin-left: 2rem;
+  background: #fff;
+  padding: 1rem 2rem;
+}
+
+#player-score {
+  color: #2196F3;
+  font-size: 1.5rem;
+}
+
+#computer-score {
+  color: #FF9800;
+  font-size: 1.5rem;
+}

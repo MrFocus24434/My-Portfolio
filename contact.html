@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1c020dfdb6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css">
+  <link rel="shortcut icon" href="human.jpg" type="image/x-icon">
+  <title>CONTACT || Personal Porfolio</title>
+</head>
+<body>
+<nav id="navbar">
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li>Projects <i class="fa-solid fa-angle-down"></i>
+    <ul>
+      <li><a href="./PROJECTS/html&css/html_css.html">Html & Css</a></li>
+      <li><a href="./PROJECTS/javascript/js.html">JavaScript</a></li>
+      <li><a href="./PROJECTS/reactJS/react.html">ReatJS</a></li>
+      <li><a href="./PROJECTS/nodeJS/node_js.html">NodeJS</a></li>
+      <li><a href="./PROJECTS/phython/python.html">Phython</a></li>
+      <li><a href="./PROJECTS/web3/web3.html">Web3</a></li>
+    </ul></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+  </ul>
+</nav>
+
+<div class="form-container">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+
+    <div class="center">
+      <h1><i class="fa-solid fa-phone"></i>  Contact Us</h1>
+      <h4>Please fill the form below to contact us</h4>
+    </div>
+
+      <form id="contact-form" action="">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Enter your name">
+          <div class="invalid-feedback">
+            Name  must be between 2 and 30 characters
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="text" class="form-control mb-3" id="email" placeholder="Enter your email">
+          <div class="invalid-feedback">
+            Enter a valid email address
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="text" class="form-control mb-3" id="phone" name="phone" placeholder="Enter your phone number">
+          <div class="invalid-feedback">
+            Enter a valid phone number
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <label>Message</label>
+          <textarea type="text" class="form-control mb-3" id="message" placeholder="Enter your message"></textarea>
+          <div class="invalid-feedback">
+            Please enter your message
+          </div>
+        </div>
+
+        <input type="submit" value="Submit" class="btn btn-primary mb-3">
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer id="main-footer" class="bg-dark text-center py-1">
+  <div class="container">
+  <p> &copy; 2023 All Rights Reserved</p>
+</div>
+</footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+@media (max-width: 450px) {
+  #navbar {
+    display: block;
+  }
+
+  #navbar h1 {
+    text-align: center;
+  }
+
+  #navbar ul{
+    display: block;
+    text-align: center;
+  }
+
+  #navbar ul li {
+    padding: 0.5rem;
+    border-bottom: #fff dotted 0.5px;
+  }
+
+  .l-heading {
+    font-size: 2rem;
+  }
+
+  .items {
+    display: block;
+  }
+
+  #who{
+    display: block;
+  }
+
+  #who .who-img{
+    background: none;
+  }
+
+  #Who {
+    text-align: center;
+  }
+}
+

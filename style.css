@@ -1,0 +1,279 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: #f4f4f4;
+  font-family: "Dosis", sans-serif;
+  /* overflow-x: hidden; */
+}
+
+/* Utility class */
+.l-heading {
+  font-size: 3rem;
+}
+
+/* Navbar */
+#navbar {
+  background: #e7e7e7;
+  position: sticky;
+  display: flex;
+  top: 0;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 0.5rem;
+}
+
+#navbar ul {
+  list-style: none;
+}
+
+#navbar ul li {
+  color: #333;
+  display: inline-block;
+  padding: 1rem;
+  position: relative;
+}
+
+#navbar ul li a {
+  color: #444;
+  text-decoration: none;
+}
+
+#navbar ul li ul {
+  display: none;
+}
+
+#navbar ul li:hover {
+  cursor: pointer;
+  background: #5a5757;
+  color: #fff;
+}
+
+#navbar ul li:hover a {
+  color: #fff;
+}
+
+#navbar ul li:hover ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 200px;
+  margin-top: 1rem;
+}
+
+#navbar ul li:hover ul li {
+  display: block;
+  background: #e7e7e7;
+}
+
+#navbar ul li:hover ul li a {
+  color: #333;
+}
+
+#navbar ul li:hover ul li:hover {
+  background: #e0e0e0;
+  color: inherit;
+}
+
+/* home page */
+/* Showcase */
+#showcase {
+  background: #333 url(./img/code1.avif) no-repeat center center/cover;
+  color: #eee;
+  height: 100vh;
+}
+
+#showcase .showcase-img {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  position: absolute;
+  top: 66.5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#showcase .showcase-img  h1{
+  text-shadow: 0.1rem 0.1rem 1rem #d4d4d4;
+  margin-top: 100px;
+}
+
+#showcase h3 {
+  text-align: justify;
+}
+
+/* About page */
+article {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 50px;
+}
+
+article .about p {
+  text-align: justify;
+}
+
+article h1 {
+  margin-bottom: 1rem;
+}
+
+#showcase article h3 {
+  text-align: center;
+}
+
+article img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-top: 205px;
+}
+
+/* Skills page */
+#main-header {
+  background: #c9c0c0;
+  padding: 1rem 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.container .title {
+  display: inline-block;
+  background: #e7e7e7;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 40px;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+#main-header h1 {
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+#timeline ul {
+  background: #c9c0c0;
+  padding: 50px 0;
+}
+
+#timeline ul li {
+  list-style: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+
+#timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #e7e7e7;
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#timeline ul li:nth-child(odd) div {
+  left: 40px; 
+  transform: translate(200px, 0);
+}
+
+#timeline ul li:nth-child(even) div {
+  left: -434px;
+  transform: translate(-200px, 0); 
+}
+
+#timeline ul li:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  background: inherit;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  transition: background 0.5s ease-in-out;
+}
+
+#timeline div:before {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#timeline ul li:nth-child(odd) div:before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #e7e7e7 transparent transparent;
+}
+
+#timeline ul li:nth-child(even) div:before {
+  right: -15px;
+  border-width: 8px 0px 8px 16px;
+  border-color: transparent transparent transparent #e7e7e7;
+}
+
+/* Show Boxes */
+#timeline ul li.show div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+#timeline ul li.show:after {
+  background: #e7e7e7;
+}
+
+/* Contact Page */
+.form-container {
+  background: #c9c0c0;
+}
+
+.form-container .center {
+  text-align: center;
+}
+
+.form-container h1 {
+  display: inline-block;
+  background: #e7e7e7;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 40px;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+/* Footer */
+#main-footer {
+  background: #e7e7e7;
+  text-align: center;
+  padding: 1rem;
+}
+
+.clr{
+  clear: both;
+}

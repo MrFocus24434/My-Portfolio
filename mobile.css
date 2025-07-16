@@ -1,0 +1,153 @@
+/* Navbar */
+@media(max-width: 600px) {
+  #navbar ul li {
+    display: block;
+  }
+
+  #navbar ul li:hover ul {
+    width: 100%;
+    position: relative;
+  }
+}
+
+/* Home Page */
+@media(max-width: 900px) {
+  .l-heading {
+    font-size: 2.3rem;
+  }
+}
+
+@media(max-width: 600px) {
+  .l-heading {
+    font-size: 1.3rem;
+  }
+}
+
+/* About Page */
+@media(max-width: 900px) {
+  #showcase {
+    height: 200vh;
+  }
+
+  #showcase .showcase-img {
+    height: 200%;
+  }
+
+  article {
+    display: block;
+    margin-top: -200px;
+  }
+
+  article img {
+    width: 300px;
+    height: 300px;
+    margin-top: 70px;
+    border-radius: 50%;
+  }
+}
+
+@media(max-width: 600px) {
+  article {
+    margin-top: 20px;
+  }
+
+  article .about p {
+    margin: 0 40px;
+  }
+  .about h1{
+    font-size: 2rem;
+  }
+
+  article img {
+    width: 250px;
+    height: 250px;
+    margin-top: 100px;
+  }
+
+  #showcase {
+    height: 250vh;
+  }
+
+  #showcase .showcase-img {
+    height: 285%;
+  }
+}
+
+/* Skills page */
+@media(max-width: 900px) {
+  #timeline ul li div {
+    width: 250px
+  }
+
+  #timeline ul li:nth-child(even) div {
+    left: -284px
+  }
+}
+
+@media(max-width: 600px) {
+  #main-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5;
+  }
+  #timeline ul li {
+    margin-left: 20px;
+  }
+
+  #timeline ul li div {
+    width: calc(100vw - 90px);
+  }
+
+  #timeline ul li:nth-child(even) div {
+    left: 40px;
+  }
+
+  #timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #e7e7e7 transparent transparent;
+  }
+}
+
+/* Project paje */
+@media (max-width: 900px) {
+  #card-articles .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .title {
+    margin-top: -4rem;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    margin-top: 1rem;
+  }
+
+  .card:nth-child(3),
+  .card:nth-child(4),
+  .card:nth-child(5){
+    margin-top: 0.1rem;
+  }
+
+}
+  
+  @media (max-width: 600px) {
+    #card-articles .card-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+      margin-top: -3rem;
+    }
+
+  .card:first-child {
+    margin-bottom: 3rem;
+  }
+
+  .card:nth-child(2) {
+    margin-top: -2.5rem;
+  }
+
+}
+

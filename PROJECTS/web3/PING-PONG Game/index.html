@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ping Pong Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-area">
+    <div class="paddle" id="player"></div>
+    <div class="paddle" id="computer"></div>
+    <div class="ball" id="ball1"></div>
+    <div class="ball" id="ball2"></div>
+  </div>
+
+  <div class="scoreboard">
+    <span id="player-score">Player: 0</span><br><br>
+    <span id="computer-score">Computer: 0</span>
+    <button class="restart-button" onclick="restartGame()">Restart</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
